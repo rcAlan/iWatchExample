@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0434EB721E1E8F8F0036BE9C /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434EB701E1E8F8E0036BE9C /* Flight.swift */; };
+		0434EB731E1E8F8F0036BE9C /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 0434EB711E1E8F8F0036BE9C /* Flights.json */; };
+		0434EB741E1E8F9A0036BE9C /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 0434EB711E1E8F8F0036BE9C /* Flights.json */; };
+		0434EB751E1E979A0036BE9C /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434EB701E1E8F8E0036BE9C /* Flight.swift */; };
+		0434EB771E1EA19A0036BE9C /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434EB761E1EA19A0036BE9C /* ScheduleInterfaceController.swift */; };
+		0434EB791E1EA3C40036BE9C /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434EB781E1EA3C40036BE9C /* FlightRowController.swift */; };
 		04ADF8A01E1D3DC70077E464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF89F1E1D3DC70077E464 /* AppDelegate.swift */; };
 		04ADF8A21E1D3DC70077E464 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF8A11E1D3DC70077E464 /* ViewController.swift */; };
 		04ADF8A51E1D3DC70077E464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ADF8A31E1D3DC70077E464 /* Main.storyboard */; };
@@ -16,10 +22,8 @@
 		04ADF8B51E1D3DC70077E464 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ADF8B31E1D3DC70077E464 /* Interface.storyboard */; };
 		04ADF8B71E1D3DC70077E464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ADF8B61E1D3DC70077E464 /* Assets.xcassets */; };
 		04ADF8BE1E1D3DC80077E464 /* iWatchExample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04ADF8BD1E1D3DC80077E464 /* iWatchExample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		04ADF8C51E1D3DC80077E464 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF8C41E1D3DC80077E464 /* InterfaceController.swift */; };
+		04ADF8C51E1D3DC80077E464 /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF8C41E1D3DC80077E464 /* FlightInterfaceController.swift */; };
 		04ADF8C71E1D3DC80077E464 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF8C61E1D3DC80077E464 /* ExtensionDelegate.swift */; };
-		04ADF8C91E1D3DC80077E464 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF8C81E1D3DC80077E464 /* NotificationController.swift */; };
-		04ADF8CB1E1D3DC80077E464 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF8CA1E1D3DC80077E464 /* ComplicationController.swift */; };
 		04ADF8CD1E1D3DC80077E464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ADF8CC1E1D3DC80077E464 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +70,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0434EB701E1E8F8E0036BE9C /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		0434EB711E1E8F8F0036BE9C /* Flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
+		0434EB761E1EA19A0036BE9C /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
+		0434EB781E1EA3C40036BE9C /* FlightRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
 		04ADF89C1E1D3DC70077E464 /* iWatchExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWatchExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ADF89F1E1D3DC70077E464 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ADF8A11E1D3DC70077E464 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,10 +87,8 @@
 		04ADF8B81E1D3DC70077E464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04ADF8BD1E1D3DC80077E464 /* iWatchExample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iWatchExample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ADF8C31E1D3DC80077E464 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		04ADF8C41E1D3DC80077E464 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		04ADF8C41E1D3DC80077E464 /* FlightInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInterfaceController.swift; sourceTree = "<group>"; };
 		04ADF8C61E1D3DC80077E464 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		04ADF8C81E1D3DC80077E464 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		04ADF8CA1E1D3DC80077E464 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		04ADF8CC1E1D3DC80077E464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ADF8CE1E1D3DC80077E464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,9 +111,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0434EB6F1E1E8F790036BE9C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0434EB701E1E8F8E0036BE9C /* Flight.swift */,
+				0434EB711E1E8F8F0036BE9C /* Flights.json */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		04ADF8931E1D3DC60077E464 = {
 			isa = PBXGroup;
 			children = (
+				0434EB6F1E1E8F790036BE9C /* Shared */,
 				04ADF89E1E1D3DC70077E464 /* iWatchExample */,
 				04ADF8B21E1D3DC70077E464 /* iWatchExample WatchKit App */,
 				04ADF8C11E1D3DC80077E464 /* iWatchExample WatchKit Extension */,
@@ -151,10 +167,10 @@
 		04ADF8C11E1D3DC80077E464 /* iWatchExample WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				04ADF8C41E1D3DC80077E464 /* InterfaceController.swift */,
+				0434EB761E1EA19A0036BE9C /* ScheduleInterfaceController.swift */,
+				0434EB781E1EA3C40036BE9C /* FlightRowController.swift */,
+				04ADF8C41E1D3DC80077E464 /* FlightInterfaceController.swift */,
 				04ADF8C61E1D3DC80077E464 /* ExtensionDelegate.swift */,
-				04ADF8C81E1D3DC80077E464 /* NotificationController.swift */,
-				04ADF8CA1E1D3DC80077E464 /* ComplicationController.swift */,
 				04ADF8CC1E1D3DC80077E464 /* Assets.xcassets */,
 				04ADF8CE1E1D3DC80077E464 /* Info.plist */,
 				04ADF8C21E1D3DC80077E464 /* Supporting Files */,
@@ -276,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04ADF8AA1E1D3DC70077E464 /* LaunchScreen.storyboard in Resources */,
+				0434EB731E1E8F8F0036BE9C /* Flights.json in Resources */,
 				04ADF8A71E1D3DC70077E464 /* Assets.xcassets in Resources */,
 				04ADF8A51E1D3DC70077E464 /* Main.storyboard in Resources */,
 			);
@@ -295,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04ADF8CD1E1D3DC80077E464 /* Assets.xcassets in Resources */,
+				0434EB741E1E8F9A0036BE9C /* Flights.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0434EB721E1E8F8F0036BE9C /* Flight.swift in Sources */,
 				04ADF8A21E1D3DC70077E464 /* ViewController.swift in Sources */,
 				04ADF8A01E1D3DC70077E464 /* AppDelegate.swift in Sources */,
 			);
@@ -314,10 +333,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ADF8C91E1D3DC80077E464 /* NotificationController.swift in Sources */,
-				04ADF8CB1E1D3DC80077E464 /* ComplicationController.swift in Sources */,
 				04ADF8C71E1D3DC80077E464 /* ExtensionDelegate.swift in Sources */,
-				04ADF8C51E1D3DC80077E464 /* InterfaceController.swift in Sources */,
+				0434EB771E1EA19A0036BE9C /* ScheduleInterfaceController.swift in Sources */,
+				0434EB751E1E979A0036BE9C /* Flight.swift in Sources */,
+				0434EB791E1EA3C40036BE9C /* FlightRowController.swift in Sources */,
+				04ADF8C51E1D3DC80077E464 /* FlightInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +586,7 @@
 				04ADF8D31E1D3DC80077E464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04ADF8D51E1D3DC80077E464 /* Build configuration list for PBXNativeTarget "iWatchExample WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +595,7 @@
 				04ADF8D71E1D3DC80077E464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04ADF8D91E1D3DC80077E464 /* Build configuration list for PBXNativeTarget "iWatchExample" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +604,7 @@
 				04ADF8DB1E1D3DC80077E464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

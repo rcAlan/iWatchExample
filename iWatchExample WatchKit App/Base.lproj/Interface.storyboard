@@ -1,39 +1,130 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pB2-dJ-x22">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Air Aber-->
+        <scene sceneID="0Rr-nN-wgV">
+            <objects>
+                <controller identifier="Schedule" title="Air Aber" id="pB2-dJ-x22" customClass="ScheduleInterfaceController" customModule="iWatchExample_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="lkc-9S-NS5">
+                            <items>
+                                <tableRow identifier="FlightRow" id="xuI-3p-hhk" customClass="FlightRowController" customModule="iWatchExample_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="OWE-TI-CSJ">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="aPN-yC-fdr">
+                                                <color key="color" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="0.0" id="0jO-Kd-dPk">
+                                                <items>
+                                                    <group height="32" alignment="left" spacing="4" id="Rf3-LR-Tfx">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="center" text="MAN" id="SZd-b7-6Qh">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                                            </label>
+                                                            <imageView width="24" height="20" alignment="left" verticalAlignment="center" image="Plane" id="bFt-e3-f73">
+                                                                <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <label alignment="left" verticalAlignment="center" text="SFO" id="sM6-A7-bj2">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="pb1-Zp-OVd">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="bottom" text="AA123" id="Kag-9C-mQt">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                            </label>
+                                                            <label alignment="right" verticalAlignment="bottom" text="On Time" id="F3c-tA-QDi">
+                                                                <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="destinationLabel" destination="sM6-A7-bj2" id="K7t-hw-22j"/>
+                                        <outlet property="flightNumberLabel" destination="Kag-9C-mQt" id="bUO-p5-zti"/>
+                                        <outlet property="originLabel" destination="SZd-b7-6Qh" id="zCn-JL-k3c"/>
+                                        <outlet property="planeImage" destination="bFt-e3-f73" id="Sc0-cD-gtm"/>
+                                        <outlet property="separator" destination="aPN-yC-fdr" id="dvf-cf-twd"/>
+                                        <outlet property="statusLabel" destination="F3c-tA-QDi" id="bGO-ja-fL1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="flightsTable" destination="lkc-9S-NS5" id="d3r-vw-E0e"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-14" y="353"/>
+        </scene>
+        <!--Flight-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller identifier="Flight" id="AgC-eL-Hgc" customClass="FlightInterfaceController" customModule="iWatchExample_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="left" id="Pfb-Zb-YfF">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="Logo" id="nMt-qQ-AJU">
+                                    <color key="tintColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="cub-Hr-Zfh">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="Mdo-RX-7J6">
+                                            <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MAN to SFO" id="9dI-K8-Egc"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="bmc-44-vZm">
+                            <items>
+                                <label alignment="left" text="AA123 Boards" id="QFk-iZ-x98"/>
+                                <label height="44" alignment="left" text="15:06" id="ehx-N5-fwj">
+                                    <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="54"/>
+                                </label>
+                                <label alignment="left" text="On Time" id="6Wo-cB-Ntz">
+                                    <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <group width="1" alignment="left" id="v4X-5y-Rkf">
+                                    <items>
+                                        <label alignment="left" text="Gate 1A" id="D4V-lO-VGL"/>
+                                        <label alignment="right" text="Seat 10A" id="VIl-8Z-ZYI"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="boardTimeLabel" destination="ehx-N5-fwj" id="kL6-kk-kUl"/>
+                        <outlet property="boardingLabel" destination="QFk-iZ-x98" id="arG-xy-ulB"/>
+                        <outlet property="flightLabel" destination="Mdo-RX-7J6" id="WoF-tQ-x24"/>
+                        <outlet property="gateLabel" destination="D4V-lO-VGL" id="9nN-wL-lDo"/>
+                        <outlet property="routeLabel" destination="9dI-K8-Egc" id="et4-dp-9yG"/>
+                        <outlet property="seatLabel" destination="VIl-8Z-ZYI" id="C8g-Qm-Wbs"/>
+                        <outlet property="statusLabel" destination="6Wo-cB-Ntz" id="Rpd-Bz-eF5"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="250" y="353"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
 </document>
